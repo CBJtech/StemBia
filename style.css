@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --light-blue: rgb(24, 96, 230);
+    --dark: rgba(194, 194, 207, 0.76);
+    --white: white; 
+    --black: black;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    p{
+        font-size: 17px;
+    }
+    .crimLink{
+        text-decoration: underline;
+        color: crimson;
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+nav{
+    width: 100%;
+    background-color: var(--white);
+    color: var(--light-blue);
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: azure;
+    transition: 0.7s;
+}
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3rem;
+}
+nav > ul > li{
+    list-style: none;
+}
+nav .member{
+background-color: var(--light-blue);
+color: var(--white);
+padding-inline: 1rem;
+padding: 0.3rem;
+border-radius: 10px;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--light-blue);
+
+}
+ .logo{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--light-blue);
+
+}
+#logo2{
+    float: left;
+    left: 0;
+}
+main{
+    width: 100%;
+    margin-top: 12rem;
+    padding: 2rem;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main h1{
+    font-size: 3rem;
+    color: rgb(24, 96, 230);
+}
+.main2 img{
+    width: 20rem;
+}
+
+aside{
+    width: 100%;
+/*     background-color: rgb(24, 96, 230);
+ *//*     color: white;
+    */ padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.vission, .mission{
+    padding: 0.6rem;
+    width: 25rem;
+    background-color: rgb(24, 96, 230);
+    color: white;
+    gap: 3rem;
+    border-radius: 10px;
+    box-shadow: 4px 4pxx 30px rgb(0.4, 0.4, 0.4, 0.4);
+    
+}
+.hamburger{
+    display: none;
+}
+
+
+.teamMembers{
+    padding: 1rem;
+}
+.teamMembers h1{
+    text-align: center;
+    color: var(--light-blue);
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card{
+    width: 20rem;
+    padding: 1rem;
+    box-shadow: 4px 4px 30px rgb(0.4, 0.4, 0,4, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    background-color: azure;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+.card img{
+    width: 10rem;
+    border-radius: 50%;
+    height: 10rem;
+    object-fit: cover;
+    border: 2px solid var(--light-blue);
+}
+
+.becomeMember{
+    padding: 1rem;
+    background-color: rgb(24, 96, 230);
+    color: white;
+
+}
+.becomeMember h1{
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 3rem;
+        display: none;
+        box-shadow: 4px 4px 30px rgb(0.4, 0.4, 0,4, 0.4);
+        width: 90%;
+        animation-name: move;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    #image1{
+        width: 15rem;
+    }
+    @keyframes move {
+        from{
+            margin-left: -40rem;
+        }
+    }
+    nav > ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    }
+    .main2 img{
+        width: 100%;
+    }
+    .hamburger{
+ display: block;
+ width: 100%;
+ position: fixed;
+ top: 0;
+ padding: 0.5rem;
+ background-color: azure;
+ color: var(--light-blue);
+}
+.hamburger .fa-solid{
+    font-size: 2rem;
+    cursor: pointer;
+    float: right;
+    right: 0;
+}
+
+    
+}
+
+
+
+
